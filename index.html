@@ -15,7 +15,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
      <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!-- Google Fonts -->
@@ -50,7 +50,7 @@
 </head>
 
 <body>
-  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="300000000">
     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
       <span aria-hidden="true">&#xD7;</span>
     </button>
@@ -107,6 +107,15 @@ minutes = minutes < 10 ? '0'+minutes : minutes;
 var strTime = hours + ':' + minutes + ' ' + ampm;
 return strTime;
 }
+
+function getQueryParams ( params, url ) {
+  
+  let href = url;
+  //this expression is to get the query strings
+  let reg = new RegExp( '[?&]' + params + '=([^&#]*)', 'i' );
+  let queryString = reg.exec(href);
+  return queryString ? queryString[1] : null;
+};
 
 function showSuccessToast(msg){
   $(".toast").html($(".toast").html()
