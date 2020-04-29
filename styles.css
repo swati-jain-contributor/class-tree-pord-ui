@@ -690,7 +690,7 @@ textarea {
   .col-block {
     top: 0;
     background-color: transparent;
-    height: 100vh;
+    height: auto;
     position: static;
     max-width: 1000px;
     margin: auto;
@@ -1077,6 +1077,7 @@ textarea {
   border: black;
   margin-top: 0;
   left: 50%;
+  font-size: 20px;
 }
 .class-panel .class-bg {
   color: #fff;
@@ -1163,6 +1164,8 @@ textarea {
 .class-panel #navChatButton {
   position: absolute;
   right: 0;
+  height: 40px !important;
+  width: 40px !important;
 }
 .class-panel .stream-container {
   padding: 0;
@@ -1865,6 +1868,9 @@ textarea {
   top: 0px !important;
   left: 0px !important;
   z-index: 2000;
+}
+.class-panel #collapseExample {
+  position: absolute;
 }
 .class-panel .carousel {
   position: relative !important;
