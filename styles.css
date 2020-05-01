@@ -533,7 +533,7 @@ textarea {
     font-size: 14px;
   }
   .card-details .card-btn {
-    height: 46px;
+    height: 52px;
     background-color: #2fd0aa;
     font-weight: bold;
   }
@@ -548,6 +548,20 @@ textarea {
   }
   .card-details .card-btn[disabled] {
     opacity: 0.7;
+  }
+  .card-details .card-btn.joining {
+    text-align: right;
+  }
+  .card-details .card-btn.joining .date {
+    margin-right: 90px !important;
+  }
+  .card-details .card-btn.joining .counter {
+    color: black;
+    font-size: 15px;
+  }
+  .card-details .card-btn.join {
+    font-size: 24px;
+    padding-top: 14px;
   }
   .overlay {
     background-color: rgba(255, 255, 255, 0.7);
@@ -589,7 +603,7 @@ textarea {
     color: #2fd0aa;
     background-color: #fff;
     height: 30px;
-    bottom: 33px;
+    bottom: 42px;
     top: auto;
     right: 28%;
   }
@@ -788,7 +802,7 @@ textarea {
     position: relative;
     overflow: hidden;
     padding-bottom: 60px;
-    height: 305px;
+    height: 312px;
   }
   .card-details .card-details-header {
     margin: 0;
@@ -819,7 +833,7 @@ textarea {
     font-size: 16px;
   }
   .card-details .card-btn {
-    height: 46px;
+    height: 52px;
     background-color: #2fd0aa;
     font-weight: bold;
   }
@@ -834,6 +848,20 @@ textarea {
   }
   .card-details .card-btn[disabled] {
     opacity: 0.7;
+  }
+  .card-details .card-btn.joining {
+    text-align: right;
+  }
+  .card-details .card-btn.joining .date {
+    margin-right: 96px !important;
+  }
+  .card-details .card-btn.joining .counter {
+    color: black;
+    font-size: 15px;
+  }
+  .card-details .card-btn.join {
+    font-size: 24px;
+    padding-top: 14px;
   }
   .overlay {
     background-color: rgba(255, 255, 255, 0.7);
@@ -882,7 +910,7 @@ textarea {
     color: #2fd0aa;
     background-color: #fff;
     height: 30px;
-    bottom: 33px;
+    bottom: 42px;
     top: auto;
     right: 28%;
   }
@@ -1024,6 +1052,45 @@ textarea {
 }
 .modal .card-details .card-details-header {
   margin-bottom: 20px;
+}
+#modal-thankyou .modal-dialog {
+  width: 100%;
+  max-width: 1000px;
+  opacity: 0.9;
+}
+.modal-content.thankyou-modal {
+  background-color: #009970;
+  height: 330px;
+  border-radius: 30px;
+  padding: 20px;
+  color: #fff;
+  font-size: 22px;
+  text-align: justify;
+}
+.modal-content.thankyou-modal button {
+  background-color: #fff;
+  color: #009970;
+  width: auto;
+  float: right;
+  margin-left: auto;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.modal-content.thankyou-modal .clap {
+  width: 125px;
+  position: absolute;
+  right: 22px;
+  top: 63px;
+}
+@media (max-width: 767px) {
+  .thankyou-modal {
+    width: 95%;
+    font-size: 16px;
+  }
+  .thankyou-modal .clap {
+    width: 64px;
+    top: 167px;
+  }
 }
 .class-panel {
   /*!
@@ -1862,12 +1929,17 @@ textarea {
   height: 100%;
   margin-top: 40px;
 }
-.class-panel #localUser {
+.class-panel #localUser-stream {
   width: 200px !important;
   height: 200px !important;
   top: 0px !important;
   left: 0px !important;
   z-index: 2000;
+}
+.class-panel #localUser-stream.full {
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1500;
 }
 .class-panel #collapseExample {
   position: absolute;
@@ -1914,6 +1986,16 @@ textarea {
 .class-panel #screenShareUser video {
   height: 100%;
   width: auto;
+}
+@media only screen and (max-width: 700px) {
+  .class-panel #chatContainer {
+    width: 95%;
+    max-width: 400px;
+  }
+  .class-panel #localUser-stream {
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 .class-panel {
   /* Contains the video element, used to fix video letter-boxing */
@@ -1982,6 +2064,16 @@ textarea {
   right: 1px;
   z-index: 1000;
   background-color: #000000c4;
+}
+.class-panel .control {
+  position: absolute;
+  color: #fff;
+  right: 5px;
+  bottom: 5px;
+  font-size: 20px;
+  font-family: "Font Awesome 5 Free";
+  background: green;
+  cursor: pointer;
 }
 .class-panel #volumeButton {
   background-color: #000000c4;
@@ -2278,9 +2370,51 @@ textarea {
   border: 1px solid #ffffff !important;
 }
 @media only screen and (max-width: 700px) {
-  .class-panel #titleContent,
-  .class-panel #navChatButton {
+  .class-panel .is-screen-btn {
     display: none;
+  }
+  .class-panel .logo {
+    padding: 10px 5px;
+  }
+  .class-panel .logo h1 {
+    font-size: 16px;
+  }
+  .class-panel .part-down {
+    font-size: 15px !important;
+  }
+  .class-panel .container {
+    width: 100% !important;
+  }
+  .class-panel #layout {
+    min-width: auto !important;
+  }
+  .class-panel .b-title {
+    font-size: 25px !important;
+  }
+  .class-panel .b-tagline {
+    font-size: 20px !important;
+  }
+  .class-panel .b-appreciate {
+    margin-top: -16px !important;
+    font-size: 22px !important;
+  }
+  .class-panel .b-topic {
+    font-size: 19px !important;
+    margin-top: -20px !important;
+  }
+  .class-panel .b-topic span {
+    font-size: 18px !important;
+  }
+  .class-panel .b-thankful {
+    margin-top: -10px !important;
+    font-size: 17px !important;
+  }
+  .class-panel #header {
+    min-width: auto !important;
+  }
+  .class-panel #header .buttonsContent {
+    max-width: 100% !important;
+    min-width: 100% !important;
   }
 }
 
