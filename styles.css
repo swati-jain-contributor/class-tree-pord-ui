@@ -1935,7 +1935,7 @@ textarea {
   top: 0px !important;
   left: 0px !important;
   z-index: 2000;
-  position: absolute;
+  display: inline-block;
 }
 .class-panel #localUser-stream.full {
   width: 100% !important;
