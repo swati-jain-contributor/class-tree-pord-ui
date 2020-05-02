@@ -1944,6 +1944,24 @@ textarea {
 }
 .class-panel #collapseExample {
   position: absolute;
+  visibility: hidden;
+  display: block !important;
+}
+.class-panel #collapseExample video {
+  visibility: hidden;
+}
+.class-panel #collapseExample .carousel-item {
+  display: block !important;
+  visibility: hidden;
+}
+.class-panel #collapseExample.show {
+  visibility: visible;
+}
+.class-panel #collapseExample.show video {
+  visibility: visible;
+}
+.class-panel #collapseExample.show .carousel-item.active {
+  visibility: visible;
 }
 .class-panel .carousel {
   position: relative !important;
@@ -1956,13 +1974,6 @@ textarea {
   background: #333;
   z-index: 3000;
   color: #fff;
-}
-.class-panel .carousel .carousel-item {
-  display: block !important;
-  visibility: hidden;
-}
-.class-panel .carousel .carousel-item.active {
-  visibility: visible;
 }
 .class-panel .carousel .carousel-inner {
   height: 100%;
