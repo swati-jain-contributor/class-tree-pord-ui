@@ -1957,6 +1957,13 @@ textarea {
   z-index: 3000;
   color: #fff;
 }
+.class-panel .carousel .carousel-item {
+  display: block !important;
+  visibility: hidden;
+}
+.class-panel .carousel .carousel-item.active {
+  visibility: visible;
+}
 .class-panel .carousel .carousel-inner {
   height: 100%;
 }
