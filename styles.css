@@ -1937,6 +1937,8 @@ textarea {
   left: 0px !important;
   z-index: 2000;
   display: inline-block;
+  margin-right: 10px;
+  flex-shrink: 0;
 }
 .class-panel #localUser-stream.full,
 .class-panel #remoteUsers.full {
@@ -1983,14 +1985,6 @@ textarea {
 .class-panel .carousel a {
   z-index: 5000;
 }
-.class-panel .carousel .part-up {
-  position: absolute;
-  right: -48px;
-  background-color: #333333;
-  top: 0;
-  margin-top: 0;
-  font-size: 30px;
-}
 .class-panel .carousel .row {
   flex-wrap: nowrap;
   margin: 0;
@@ -2020,7 +2014,27 @@ textarea {
   .class-panel #remoteUsers {
     width: 100px !important;
     height: 100px !important;
+    margin-right: 10px;
   }
+}
+.class-panel .participantbox {
+  position: absolute;
+  height: 230px !important;
+  background-color: #333333;
+  width: 650px  !important;
+  overflow: auto;
+  z-index: 5000;
+  padding: 4px 7px;
+  display: flex;
+}
+.part-up {
+  position: absolute;
+  right: -48px;
+  background-color: #333333;
+  top: 0;
+  margin-top: 0;
+  font-size: 30px;
+  z-index: 5000;
 }
 .class-panel {
   /* Contains the video element, used to fix video letter-boxing */
