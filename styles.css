@@ -2037,6 +2037,11 @@ textarea {
     height: 100px !important;
     margin-right: 10px;
   }
+  .class-panel #chatContainer #remoteUsers {
+    width: 100% !important;
+    margin: 0;
+    height: auto !important;
+  }
   .class-panel .part-up {
     right: 0 !important;
   }
