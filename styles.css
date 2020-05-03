@@ -1929,7 +1929,8 @@ textarea {
   height: 100%;
   margin-top: 40px;
 }
-.class-panel #localUser-stream {
+.class-panel #localUser-stream,
+.class-panel #remoteUsers {
   width: 200px !important;
   height: 200px !important;
   top: 0px !important;
@@ -1937,7 +1938,8 @@ textarea {
   z-index: 2000;
   display: inline-block;
 }
-.class-panel #localUser-stream.full {
+.class-panel #localUser-stream.full,
+.class-panel #remoteUsers.full {
   width: 100% !important;
   height: 100% !important;
   z-index: 1500;
@@ -2014,7 +2016,8 @@ textarea {
     width: 95%;
     max-width: 400px;
   }
-  .class-panel #localUser-stream {
+  .class-panel #localUser-stream,
+  .class-panel #remoteUsers {
     width: 100px !important;
     height: 100px !important;
   }
