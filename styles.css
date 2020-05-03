@@ -1974,7 +1974,7 @@ textarea {
   width: 640px !important;
   height: 212px !important;
   left: 200px !important;
-  top: auto  !important;
+  top: auto !important;
   padding: 7px 8px;
   background: #333;
   z-index: 3000;
@@ -2006,9 +2006,29 @@ textarea {
   height: 100%;
   width: auto;
 }
+.class-panel .participantbox {
+  position: absolute;
+  height: 230px !important;
+  background-color: #333333;
+  width: 650px !important;
+  overflow: auto;
+  z-index: 5000;
+  padding: 4px 7px;
+  display: flex;
+  max-width: 100vw;
+}
+.class-panel .part-up {
+  position: absolute;
+  right: -48px;
+  background-color: #333333;
+  top: 0;
+  margin-top: 0;
+  font-size: 30px;
+  z-index: 5000;
+}
 @media only screen and (max-width: 700px) {
   .class-panel #chatContainer {
-    width: 95%;
+    width: 95% !important;
     max-width: 400px;
   }
   .class-panel #localUser-stream,
@@ -2017,25 +2037,18 @@ textarea {
     height: 100px !important;
     margin-right: 10px;
   }
+  .class-panel .part-up {
+    right: 0 !important;
+  }
+  .class-panel .participantbox {
+    height: 130px !important;
+  }
 }
-.class-panel .participantbox {
-  position: absolute;
-  height: 230px !important;
-  background-color: #333333;
-  width: 650px  !important;
-  overflow: auto;
-  z-index: 5000;
-  padding: 4px 7px;
-  display: flex;
-}
-.part-up {
-  position: absolute;
-  right: -48px;
-  background-color: #333333;
-  top: 0;
-  margin-top: 0;
-  font-size: 30px;
-  z-index: 5000;
+@media only screen and (max-width: 700px) and (orientation: portrait) {
+  .class-panel #screenShareUser video {
+    height: auto;
+    width: 100%;
+  }
 }
 .class-panel {
   /* Contains the video element, used to fix video letter-boxing */
