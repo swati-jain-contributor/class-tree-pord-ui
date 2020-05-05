@@ -168,7 +168,7 @@ function loadJitsi(id, topic,name){
       width: window.innerWidth,
       height: window.innerHeight,
       parentNode: document.querySelector('#meet'),
-      interfaceConfigOverwrite: {OPEN_IN_MOBILE_BROWSER:true, JITSI_WATERMARK_LINK:"https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo.JPG" }
+      interfaceConfigOverwrite: {OPEN_IN_MOBILE_BROWSER:true, SHOW_CHROME_EXTENSION_BANNER :false, MOBILE_APP_PROMO:false, JITSI_WATERMARK_LINK:"https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo.JPG" }
     };
     const api = new JitsiMeetExternalAPI(domain, options);
     api.on('readyToClose', () => {
