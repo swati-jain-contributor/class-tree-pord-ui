@@ -43,7 +43,7 @@
 
   gtag('config', 'UA-162981138-1');
 </script>
-
+<script src="https://meet.jit.si/external_api.js"></script>
 </head>
 
 <body>
@@ -143,6 +143,18 @@ function loadCarousel(){
 
 function showThankyou(){
   $("#modal-thankyou").modal();
+}
+
+function loadJitsi(id, topic,name){
+  const domain = 'meet.jit.si';
+    const options = {
+      roomName: "Classtree Live Class on "+ topic + " By " + name,
+      width: window.innerWidth,
+      height: window.innerHeight,
+      parentNode: document.querySelector('#meet'),
+      interfaceConfigOverwrite: { JITSI_WATERMARK_LINK:"https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo.JPG" }
+    };
+    const api = new JitsiMeetExternalAPI(domain, options);
 }
   </script>
 
