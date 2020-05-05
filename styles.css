@@ -1112,10 +1112,6 @@ textarea {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
-.classpanel #meet iframe {
-  min-width: 1000px;
-  min-height: 1000px;
-}
 @media only screen and (max-width: 700px) {
   .classpanel .logo {
     left: 0;
