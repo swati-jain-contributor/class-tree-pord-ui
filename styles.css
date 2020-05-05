@@ -1092,9 +1092,9 @@ textarea {
     top: 167px;
   }
 }
-.logo {
+.classpanel .logo {
   overflow: hidden;
-  padding: 16px 30px 12px 30px;
+  padding: 20px 30px 12px 30px;
   background: #009970;
   position: absolute;
   z-index: 5000;
@@ -1104,13 +1104,30 @@ textarea {
   top: 30px;
   height: 78px;
 }
-.logo h1 {
+.classpanel .logo h1 {
   font-size: 38px;
   padding: 0;
   line-height: 1;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   margin: 0;
+}
+.classpanel #meet iframe {
+  min-width: 1000px;
+  min-height: 1000px;
+}
+@media only screen and (max-width: 700px) {
+  .classpanel .logo {
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  .classpanel .request-desktop {
+    display: block;
+    margin-top: 100px;
+    font-size: 20px;
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map*/

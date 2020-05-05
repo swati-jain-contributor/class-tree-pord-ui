@@ -141,6 +141,22 @@ function loadCarousel(){
 });
 }
 
+Object.defineProperty(navigator, 'userAgent', {
+    get: function () { return 'Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Mobile Safari/537.36'; }
+});
+
+Object.defineProperty(navigator, 'platform', {
+    get: function () { return 'MacIntel'; }
+});
+
+Object.defineProperty(navigator, 'appName', {
+    get: function () { return 'Netscape'; }
+});
+
+Object.defineProperty(navigator, 'appCodeName', {
+    get: function () { return 'Mozilla'; }
+});
+
 function showThankyou(){
   $("#modal-thankyou").modal();
 }
@@ -152,9 +168,15 @@ function loadJitsi(id, topic,name){
       width: window.innerWidth,
       height: window.innerHeight,
       parentNode: document.querySelector('#meet'),
-      interfaceConfigOverwrite: { JITSI_WATERMARK_LINK:"https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo.JPG" }
+      interfaceConfigOverwrite: {OPEN_IN_MOBILE_BROWSER:true, JITSI_WATERMARK_LINK:"https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo.JPG" }
     };
     const api = new JitsiMeetExternalAPI(domain, options);
+    api.on('readyToClose', () => {
+      location.href = "/student?thankyou=true";
+    });
+    api.addEventListener('readyToClose',  function(){
+      location.href = "/student?thankyou=true";
+                                              });
 }
   </script>
 
