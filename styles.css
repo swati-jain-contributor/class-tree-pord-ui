@@ -2380,7 +2380,7 @@ textarea {
   right: 0;
   top: -8px;
 }
-.class-panel .message-wrap {
+.class-panel #participantContainer .message-wrap {
   background-color: #fff;
   padding: 0;
   text-transform: uppercase;
@@ -2388,10 +2388,10 @@ textarea {
   height: 100%;
   padding: 0px;
 }
-.class-panel .message-wrap .list-item:first {
+.class-panel #participantContainer .message-wrap .list-item:first {
   margin-top: 0px;
 }
-.class-panel .message-wrap .list-item {
+.class-panel #participantContainer .message-wrap .list-item {
   background-color: #9DCCB8;
   padding: 10px;
   margin: 2px 0px;
