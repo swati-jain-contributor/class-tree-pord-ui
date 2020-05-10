@@ -2226,6 +2226,9 @@ textarea {
   margin: auto;
   border-radius: 20px;
 }
+.class-panel #chatComponent canvas {
+  display: none;
+}
 .class-panel .message-wrap {
   padding: 0 15px;
   height: calc(100% - 80px);
@@ -2245,6 +2248,7 @@ textarea {
 .class-panel .msg-detail {
   width: calc(100% - 65px);
   display: inline-block;
+  width: 100%;
 }
 .class-panel .msg-detail p {
   margin: 0;
@@ -2275,14 +2279,11 @@ textarea {
   position: absolute;
 }
 .class-panel .text {
-  word-break: break-all;
+  word-break: break-word;
   color: #000000;
 }
 .class-panel .message > .left .msg-detail .msg-info {
   text-align: left;
-}
-.class-panel .message.left .msg-detail {
-  padding-left: 65px;
 }
 .class-panel .message.left .user-img {
   left: -5px;
