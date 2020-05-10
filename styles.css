@@ -350,7 +350,7 @@ textarea {
 .search-box {
   float: right;
   margin-top: -30px;
-  width: 700px;
+  width: 900px;
 }
 .registered-user-msg {
   color: skyblue;
@@ -2039,7 +2039,7 @@ textarea {
   text-align: center;
   font-size: 50px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .class-panel #chatContainer,
   .class-panel #participantContainer {
     width: 95% !important;
@@ -2061,7 +2061,7 @@ textarea {
     height: 130px !important;
   }
 }
-@media only screen and (max-width: 700px) and (orientation: portrait) {
+@media only screen and (max-width: 900px) and (orientation: portrait) {
   .class-panel #screenShareUser video {
     height: auto;
     width: 100%;
@@ -2502,7 +2502,7 @@ textarea {
 .class-panel .pointLight {
   border: 1px solid #ffffff !important;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .class-panel .is-screen-btn {
     display: none;
   }
