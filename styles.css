@@ -2387,7 +2387,7 @@ textarea {
   width: 400px;
   height: 60%;
   right: 0;
-  bottom: 40px;
+  bottom: 70px;
   top: auto;
 }
 .class-panel #participantToolbar {
@@ -2472,7 +2472,7 @@ textarea {
   position: absolute;
   right: 76px;
   height: 40px;
-  width: 90px;
+  width: 130px;
   padding: 7px;
 }
 .class-panel #titleContent {
@@ -2541,14 +2541,17 @@ textarea {
     min-width: auto !important;
   }
   .class-panel .b-title {
-    font-size: 25px !important;
+    font-size: 20px !important;
+    margin-top: -20px;
   }
   .class-panel .b-tagline {
-    font-size: 20px !important;
+    font-size: 17px !important;
+    margin-top: -20px;
   }
   .class-panel .b-appreciate {
     margin-top: -16px !important;
     font-size: 22px !important;
+    font-size: 17px !important;
   }
   .class-panel .b-topic {
     font-size: 19px !important;
