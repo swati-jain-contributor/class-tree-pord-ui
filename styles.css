@@ -35,14 +35,14 @@ button,
   width: 100%;
   padding: 5px 20px;
   margin-top: 15px;
-  background-color: #FF5454;
+  background-color: #009970;
   color: #fff;
   border: none;
 }
 button.sec,
 .button.sec {
   background-color: #fff;
-  color: #FF5454;
+  color: #009970;
   margin-top: 15px;
 }
 .no-records {
@@ -1117,6 +1117,20 @@ textarea {
   /* Load animation */
   /* Workaround for iOS freezing issue when cropping videos */
   /* https://bugs.webkit.org/show_bug.cgi?id=176439 */
+}
+.class-panel.potrait {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  height: 100vh;
+}
+.class-panel.potrait .logo {
+  top: 0;
+}
+.class-panel.potrait button {
+  height: 40px;
+  font-size: 20px;
 }
 .class-panel button {
   width: auto;
