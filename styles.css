@@ -1124,6 +1124,10 @@ textarea {
   justify-content: center;
   padding: 30px;
   height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 10000000;
+  background: #fff;
 }
 .class-panel.potrait .logo {
   top: 0;
