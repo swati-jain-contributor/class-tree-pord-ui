@@ -2521,7 +2521,30 @@ textarea {
 .class-panel .pointLight {
   border: 1px solid #ffffff !important;
 }
+.class-panel .micButton {
+  outline: none;
+}
+.class-panel .micButton svg {
+  width: 65px;
+  margin-top: -30px;
+  outline: none;
+}
 @media only screen and (max-width: 900px) {
+  .class-panel .micButton {
+    outline: none;
+  }
+  .class-panel .micButton svg {
+    position: fixed;
+    bottom: 20px;
+    left: 1px;
+    width: 50px;
+  }
+  .class-panel .micButton span {
+    font-size: 10px;
+    position: fixed;
+    left: 55px;
+    bottom: 50px;
+  }
   .class-panel .is-screen-btn {
     display: none;
   }
