@@ -2063,7 +2063,7 @@ textarea {
   .class-panel #participantContainer {
     width: 95% !important;
     max-width: 400px;
-    height: calc(100% - 41px);
+    height: calc(100% - 41px) !important;
   }
   .class-panel #chatContainer.typing,
   .class-panel #participantContainer.typing {
