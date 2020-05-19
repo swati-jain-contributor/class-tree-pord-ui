@@ -1126,6 +1126,7 @@ textarea {
   height: 100vh;
   position: fixed;
   width: 100vw;
+  left: 0;
   z-index: 10000000;
   background: #fff;
 }
@@ -2062,6 +2063,23 @@ textarea {
   .class-panel #participantContainer {
     width: 95% !important;
     max-width: 400px;
+    height: calc(100% - 41px);
+  }
+  .class-panel #chatContainer.typing,
+  .class-panel #participantContainer.typing {
+    max-width: 100%;
+    width: 100% !important;
+    bottom: 0;
+    height: 100%;
+    z-index: 10000000;
+  }
+  .class-panel #chatContainer.typing #messageInput,
+  .class-panel #participantContainer.typing #messageInput {
+    height: 80px;
+  }
+  .class-panel #chatContainer.typing .message-wrap,
+  .class-panel #participantContainer.typing .message-wrap {
+    height: calc(100% - 120px);
   }
   .class-panel .buttonsContent {
     text-align: left;
@@ -2345,7 +2363,8 @@ textarea {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-.class-panel #messageInput input {
+.class-panel #messageInput input,
+.class-panel #messageInput textarea {
   width: 90%;
   height: 100%;
   border: none;
@@ -2353,6 +2372,7 @@ textarea {
   font-size: 14px;
   margin-left: -6%;
   color: #000000;
+  resize: none;
 }
 .class-panel #sendButton {
   background-color: #81e9b0;
@@ -2535,7 +2555,7 @@ textarea {
   }
   .class-panel .micButton svg {
     position: fixed;
-    bottom: 20px;
+    bottom: 2px;
     left: 1px;
     width: 50px;
   }
@@ -2591,8 +2611,8 @@ textarea {
     min-width: auto !important;
   }
   .class-panel #header .buttonsContent {
-    max-width: 100% !important;
-    min-width: 100% !important;
+    max-width: 90% !important;
+    min-width: 90% !important;
     padding-left: 55px;
   }
 }
