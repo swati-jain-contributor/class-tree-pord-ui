@@ -8,6 +8,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+<!-- <script src="https://cdn.WebRTC-Experiment.com/RecordRTC.js"></script>
+<script src="https://cdn.webrtc-experiment.com/screenshot.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script> -->
 <!-- Popper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
@@ -47,7 +51,7 @@
 </head>
 
 <body>
-  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+  <div class="toast fade hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
       <span aria-hidden="true">&#xD7;</span>
     </button>
@@ -58,16 +62,15 @@
 
   <div id="app"></div>
 
-  <script src="/bundle.js"></script>
+  
   <script>
 
 function initiateDatepicker(context){
   var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-  today.setDate(today.getDate() + 1);
+  today.setDate(today.getDate() + 3);
   $('[name="date"]').datepicker({minDate: today, change: context.onChange,close: context.checkELValidity});
-  
-  $('[name="startTime"]').dropdown({change: context.onChange});
-  $('[name="maxStudents"]').dropdown({change: context.onChange});
+  // $('[name="startTime"]').dropdown({change: context.onChange});
+  // $('[name="maxStudents"]').dropdown({change: context.onChange});
 }
 
 Date.prototype.toMysqlFormat = function() {
@@ -141,22 +144,6 @@ function loadCarousel(){
 });
 }
 
-Object.defineProperty(navigator, 'userAgent', {
-    get: function () { return 'Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Mobile Safari/537.36'; }
-});
-
-Object.defineProperty(navigator, 'platform', {
-    get: function () { return 'MacIntel'; }
-});
-
-Object.defineProperty(navigator, 'appName', {
-    get: function () { return 'Netscape'; }
-});
-
-Object.defineProperty(navigator, 'appCodeName', {
-    get: function () { return 'Mozilla'; }
-});
-
 function notifyMe(title, msg) {
   // Let's check if the browser supports notifications
   if (!("Notification" in window)) {
@@ -187,7 +174,61 @@ function notifyMe(title, msg) {
 function showThankyou(){
   $("#modal-thankyou").modal();
 }
+// function startRecording(){
+//   var elementToShare = document.body;
+//   var canvas2d = document.createElement('canvas'); // OUR OWN invisible CANVAS
+// var context = canvas2d.getContext('2d');
+// canvas2d.width = elementToShare.clientWidth;
+// canvas2d.height = elementToShare.clientHeight;
+// canvas2d.style = 'display: none;';
+// (document.body || document.documentElement).appendChild(canvas2d);
 
+// // looper+selfinvoker method
+// (function looper() {
+//     if (recorder && recorder.getBlob() && recorder.getBlob().size) {
+//         // this line checks whether recorder is stopped
+//         return;
+//     }
+
+//     // looper keeps calling this method until recording stops
+//     html2canvas(document.body, {
+//         grabMouse: false,
+//         allowTaint:true,
+//         onrendered: function(canvas) {
+//           console.log(canvas);
+//             context.clearRect(0, 0, canvas2d.width, canvas2d.height);
+
+//             // draw html2canvas resulting canvas on our own canvas
+//             context.drawImage(canvas, 0, 0, canvas2d.width, canvas2d.height);
+
+//             // here is how looper works
+//             //setTimeout(looper, 1);
+//         }
+//     });
+// })();
+
+// var canvasStream = canvas2d.captureStream();
+// canvasStream.fullcanvas = true;
+// canvasStream.width = canvas2d.width;
+// canvasStream.height = canvas2d.height;
+//   var recorder = RecordRTC([canvasStream], {
+//     type: 'video',
+//     showMousePointer: false
+// });
+// recorder.startRecording();
+// setTimeout(()=>{
+// //   recorder.stopRecording(function(url) {
+// //     window.open(url);
+// // });
+// var recordedBlobs = recorder.getBlob();
+// var file = new File([recordedBlobs], 'video.webm', {
+//     type: 'video/webm'
+// });
+
+// invokeSaveAsDialog(file);
+// }, 10000)
+
+// }
 function loadJitsi(id, topic,name){
   const domain = 'meet.jit.si';
     const options = {
@@ -206,6 +247,7 @@ function loadJitsi(id, topic,name){
                                               });
 }
   </script>
+  <script src="/bundle.js"></script>
 
 
 
