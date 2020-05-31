@@ -1684,6 +1684,9 @@ button.next {
   position: fixed;
   z-index: 50000;
 }
+.class-details-page .paid {
+  color: #0f7c90;
+}
 .class-details-page .class-details-content {
   padding: 20px;
   border-top-left-radius: 50px;
