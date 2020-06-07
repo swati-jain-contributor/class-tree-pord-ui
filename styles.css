@@ -1733,6 +1733,9 @@ button.next {
   display: block;
   margin-bottom: 6px;
 }
+.class-details-page .class-details-content .cd-qbox .cd-get .fa {
+  width: 18px;
+}
 .class-details-page .class-details-content .cd-book-wrapper {
   position: fixed;
   bottom: 0;
