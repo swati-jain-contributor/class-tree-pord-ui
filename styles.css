@@ -1025,6 +1025,9 @@
 .popup .multi-input select {
   width: 68%;
   border-radius: 0px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 .popup .row {
   margin: 0;
@@ -1070,6 +1073,17 @@
   opacity: 0.7;
   background: #000 !important;
 }
+.datascience .popup .col-md-6 {
+  padding: 0 10px !important;
+}
+.datascience .form_md input[type=datepicker],
+.datascience .form_md input[type=email],
+.datascience .form_md input[type=number],
+.datascience .form_md input[type=password],
+.datascience .form_md input[type=tel],
+.datascience .form_md input[type=text] {
+  margin-bottom: 0px !important;
+}
 @media (max-width: 767px) {
   .popup {
     max-width: 100% !important;
@@ -1108,8 +1122,8 @@
   margin-bottom: 50px;
 }
 .datascience .journey-section .left a {
-  border-color: #0075ff;
-  background: #0075ff;
+  border-color: #009970;
+  background: #009970;
   color: #ffffff;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1279,7 +1293,7 @@
   margin: 10px 0 15px;
 }
 .datascience .trending-course .section-separator::before {
-  background: #e94850;
+  background: #009970;
 }
 .datascience .trending-course .list-carousel {
   margin-top: 20px;
@@ -1294,27 +1308,6 @@
 .datascience .trending-course .course-wrapper {
   padding-left: 10px;
   padding-right: 10px;
-}
-.datascience .trending-course .course {
-  width: 100%;
-  height: 300px;
-  padding: 20px;
-  color: #fff;
-}
-.datascience .trending-course .slick-slide:nth-child(1n) .course {
-  background-color: #0D4E60;
-}
-.datascience .trending-course .slick-slide:nth-child(2n) .course {
-  background-color: #FEC342;
-}
-.datascience .trending-course .slick-slide:nth-child(3n) .course {
-  background-color: #EBCBAC;
-}
-.datascience .trending-course .slick-slidee:nth-child(4n) .course {
-  background-color: #6A94CF;
-}
-.datascience .trending-course .slick-slide:nth-child(5n) .course {
-  background-color: #00A59A;
 }
 .datascience .pioneers {
   background-color: #FAFAFA;
@@ -1334,7 +1327,7 @@
   margin: 10px 0 15px;
 }
 .datascience .pioneers .section-separator::before {
-  background: #e94850;
+  background: #009970;
 }
 .datascience .pioneers .list-carousel {
   margin-top: 20px;
@@ -1389,7 +1382,7 @@
   margin: 10px 0 15px;
 }
 .datascience .corporates .section-separator::before {
-  background: #e94850;
+  background: #009970;
 }
 .datascience .corporates .corporate-wrapper {
   display: flex;
@@ -1923,8 +1916,6 @@
   clear: both;
 }
 .datascience .row-eq-height .vlog-module article {
-  padding-left: 18px;
-  padding-right: 18px;
   float: left;
   margin-bottom: 36px;
   max-width: 100%;
@@ -2023,8 +2014,6 @@
   text-align: left;
 }
 .datascience .latest .vlog-content .vlog-module article {
-  padding-left: 18px;
-  padding-right: 18px;
   float: left;
   margin-bottom: 36px;
   text-align: left;
@@ -2541,16 +2530,6 @@
 .datascience .respimg {
   width: 100%;
   height: auto;
-}
-.datascience .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.2;
-  z-index: 2;
 }
 .datascience .op1 {
   opacity: 0.1;
@@ -3307,8 +3286,15 @@
   border: 1px solid transparent;
 }
 .datascience .navbar-inverse {
-  background-color: #222;
+  background-color: #000;
   border-color: #080808;
+  padding: 25px 0px;
+}
+.datascience .navbar-inverse .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .datascience .navbar-toggle {
   position: relative;
@@ -3332,7 +3318,13 @@
   border-color: #333;
 }
 .datascience .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+  font-weight: 1000;
+  font-size: 31px;
+  line-height: 31px;
+  color: #009970;
+}
+.datascience .navbar-inverse .navbar-brand span {
+  color: #fff;
 }
 .datascience .navbar-brand {
   float: left;
@@ -3380,7 +3372,7 @@
   padding: 10px 15px;
   line-height: 20px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   cursor: pointer;
   margin: 0px;
@@ -3390,7 +3382,7 @@
   color: #fff !important;
 }
 .datascience .bg-red {
-  background-color: #e94350 !important;
+  background-color: #009970 !important;
   border: 1px solid transparent !important;
   color: #fff !important;
   border-radius: 100px !important;
@@ -14155,8 +14147,8 @@
 }
 .courses-page .info-container a {
   margin-top: 15px;
-  background: #39c1cd;
-  border-color: #39c1cd;
+  background: #009970;
+  border-color: #009970;
   border-radius: 50px;
   text-transform: uppercase;
   padding: 0.7em 2.5em;
@@ -14191,8 +14183,8 @@
   width: 40px;
 }
 .courses-page .all-courses {
-  background: #39c1cd;
-  border-color: #39c1cd;
+  background: #009970;
+  border-color: #009970;
   border-radius: 50px;
   text-transform: uppercase;
   padding: 0.7em 2.5em;
@@ -14490,8 +14482,8 @@
 }
 .courses-page .info-container a {
   margin-top: 15px;
-  background: #39c1cd;
-  border-color: #39c1cd;
+  background: #009970;
+  border-color: #009970;
   border-radius: 50px;
   text-transform: uppercase;
   padding: 0.7em 2.5em;
@@ -14526,8 +14518,8 @@
   width: 40px;
 }
 .courses-page .all-courses {
-  background: #39c1cd;
-  border-color: #39c1cd;
+  background: #009970;
+  border-color: #009970;
   border-radius: 50px;
   text-transform: uppercase;
   padding: 0.7em 2.5em;
@@ -14590,6 +14582,25 @@
 }
 .courses-page .skill-list article img {
   width: 80px;
+}
+.course {
+  width: 360px;
+  height: 300px;
+  border: 1px solid #e6eaeb;
+  border-radius: 4px;
+  color: #4d5356;
+  margin: 24px 0 32px;
+  padding: 32px 24px 0;
+  position: relative;
+  text-align: center;
+  transition: transform 0.25s ease-in-out;
+}
+.course img {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  left: 50%;
 }
 /* Styles */
 .form-check {
@@ -15453,7 +15464,7 @@ textarea {
     padding: 10px 30px;
     box-shadow: 0px 0px 4px #cecece;
     min-height: 240px;
-    z-index: 1000;
+    z-index: 10000;
     padding-bottom: 30px;
     padding-top: 30px;
     max-height: 100vh;
@@ -15754,7 +15765,7 @@ textarea {
     padding: 10px 30px;
     box-shadow: 0px 0px 4px #cecece;
     min-height: 240px;
-    z-index: 1000;
+    z-index: 10000;
     padding-bottom: 30px;
     padding-top: 30px;
     max-width: 400px;
