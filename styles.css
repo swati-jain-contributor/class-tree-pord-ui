@@ -2229,6 +2229,7 @@
   .datascience .video-section .vlog-featured-info.container {
     margin: 0!important;
     width: 100% !important;
+    padding: 0;
   }
   .datascience .video-section .vlog-featured-info-bg.vlog-highlight {
     padding: 10px;
@@ -2243,6 +2244,7 @@
   .datascience .video-section section .container {
     width: 100% !important;
     margin: 0 !important;
+    padding: 0;
   }
   .datascience .video-section .courses-section {
     padding: 0px;
@@ -2252,6 +2254,9 @@
   }
   .datascience .video-section .vlog-section article img {
     width: 100%;
+  }
+  .datascience .video-section .latest .container {
+    padding: 15px;
   }
   .datascience .video-section .latest .vlog-content {
     max-width: 100%;
