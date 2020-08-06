@@ -2224,7 +2224,7 @@
     padding: 15px;
   }
   .datascience .video-section iframe {
-    width: 100%;
+    width: 100% !important;
   }
   .datascience .video-section .video-banner {
     height: 300px;
