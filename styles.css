@@ -2223,6 +2223,9 @@
     max-width: 100%;
     padding: 15px;
   }
+  .datascience .video-section iframe {
+    width: 100%;
+  }
   .datascience .video-section .video-banner {
     height: 300px;
   }
