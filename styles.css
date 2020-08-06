@@ -1087,6 +1087,30 @@
 @media (max-width: 767px) {
   .popup {
     max-width: 100% !important;
+    border-radius: 0px !important;
+  }
+  .popup .form-content {
+    padding: 0;
+  }
+  .popup .form-content form {
+    padding-top: 20px;
+  }
+  .popup button {
+    width: 200px;
+  }
+  .popup .row {
+    margin-bottom: 0;
+  }
+  .popup .row .col-md-6,
+  .popup .row .col-md-12 {
+    margin-bottom: 5px;
+    padding: 0 10px !important;
+  }
+  .popup .fa-times {
+    z-index: 20000;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
   }
 }
 .datascience {
@@ -2066,6 +2090,189 @@
 @media (min-width: 1200px) {
   .datascience .hidden-lg {
     display: none !important;
+  }
+}
+@media (max-width: 1100px) {
+  .datascience .navbar-inverse .container {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .datascience .navbar-inverse .container .navbar-header {
+    margin: 0;
+    width: 100%;
+  }
+  .datascience .navbar-inverse .container .navbar-header button.navbar-toggle {
+    width: 40px;
+  }
+  .datascience .navbar-inverse .container .navbar-header a.btn.free-trail {
+    display: none !important;
+  }
+  .datascience .navbar-inverse .container .navbar-header .navbar-brand {
+    font-size: 23px;
+    margin: 0;
+    line-height: 25px;
+    height: auto;
+    margin-top: 8px;
+    padding-left: 9px;
+  }
+  .datascience .journey-section {
+    flex-direction: column;
+  }
+  .datascience .journey-section .left {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+  .datascience .library .title-text {
+    padding: 20px;
+  }
+  .datascience .library .title-text button {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .datascience .library .feature-list {
+    flex-wrap: wrap;
+  }
+  .datascience .library .feature-list .section {
+    margin-bottom: 20px;
+  }
+  .datascience section {
+    width: 100% !important;
+    margin: auto !important;
+  }
+  .datascience .trending-course h1 {
+    font-size: 22px;
+  }
+  .datascience .trending-course .list-carousel {
+    padding: 0px;
+  }
+  .datascience .trending-course .list-carousel .slick-list {
+    padding: 0;
+  }
+  .datascience .trending-course .list-carousel .slick-list .course {
+    width: 100%;
+  }
+  .datascience .trending-course .sw-btn {
+    top: 50% !important;
+  }
+  .datascience .trending-course .swiper-button-prev {
+    left: -12px !important;
+  }
+  .datascience .trending-course .swiper-button-next {
+    right: -12px !important;
+  }
+  .datascience .roadmap {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .datascience .roadmap .title {
+    line-height: 40px;
+  }
+  .datascience .roadmap .flow {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .datascience .roadmap .flow .circle {
+    margin-bottom: 20px;
+  }
+  .datascience .pioneers .list-carousel {
+    padding: 0px;
+  }
+  .datascience .pioneers .list-carousel .slick-track {
+    height: 350px;
+  }
+  .datascience .pioneers .list-carousel .slick-list {
+    padding: 0;
+  }
+  .datascience .pioneers .list-carousel .slick-list .course {
+    width: 100%;
+  }
+  .datascience .pioneers .sw-btn {
+    top: 50% !important;
+  }
+  .datascience .pioneers .swiper-button-prev {
+    left: -12px !important;
+  }
+  .datascience .pioneers .swiper-button-next {
+    right: -12px !important;
+  }
+  .datascience .webinars .row {
+    padding: 20px;
+  }
+  .datascience .webinars .row .right {
+    flex-direction: column;
+  }
+  .datascience .webinars .row .right .webinar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .datascience .book-list .parent {
+    height: 330px;
+    margin: auto;
+  }
+  .datascience .book-list .book {
+    display: block;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .datascience .blog-list {
+    padding: 0px !important;
+  }
+  .datascience .blog-list .blog {
+    max-width: 100%;
+    padding: 15px;
+  }
+  .datascience .video-section .video-banner {
+    height: 300px;
+  }
+  .datascience .video-section .vlog-featured-info.container {
+    margin: 0!important;
+    width: 100% !important;
+  }
+  .datascience .video-section .vlog-featured-info-bg.vlog-highlight {
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+  .datascience .video-section .vlog-featured-info.container .entry-title a {
+    font-size: 25px;
+  }
+  .datascience .video-section section {
+    padding: 10px !important;
+  }
+  .datascience .video-section section .container {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .datascience .video-section .courses-section {
+    padding: 0px;
+  }
+  .datascience .video-section .courses-section p {
+    padding: 10px;
+  }
+  .datascience .video-section .vlog-section article img {
+    width: 100%;
+  }
+  .datascience .video-section .latest .vlog-content {
+    max-width: 100%;
+  }
+  .datascience .video-section .latest .vlog-content .vlog-module article .entry-image {
+    margin-bottom: 20px;
+  }
+  .datascience .video-section .vlog-featured-info.container .vlog-vcenter-actions.entry-actions {
+    height: auto;
+  }
+  .datascience .pages img {
+    margin: 0;
+    padding: 10px;
+  }
+  .datascience .blog-read .article {
+    max-width: 100%;
+  }
+  .datascience .navbar-collapse {
+    position: fixed;
+    right: 0px;
+    top: 76px;
+    background-color: #000000;
   }
 }
 /*--
@@ -14247,6 +14454,54 @@
 .courses-page .skill-list article img {
   width: 80px;
 }
+@media (max-width: 1100px) {
+  .datascience .courses-page .course-banner {
+    overflow: hidden;
+    position: relative;
+    height: 446px;
+  }
+  .datascience .courses-page .course-banner .info-container {
+    width: 300px;
+    padding: 00;
+    padding-left: 20px;
+    width: 94% !important;
+    margin: 0 !important;
+    margin-left: 10px !important;
+  }
+  .datascience .courses-page .course-banner .info-container h4 .typer {
+    font-size: 30px;
+  }
+  .datascience .courses-page .course-banner .info-container a {
+    width: 215px;
+  }
+  .datascience .courses-page .class-list {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .datascience .courses-page .class-list .course {
+    width: 100%;
+  }
+  .datascience .courses-page .select-tech {
+    padding: 52px 16px;
+  }
+  .datascience .courses-page .select-tech h2 {
+    font-size: 26px;
+  }
+  .datascience .courses-page .tech-list {
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .datascience .courses-page .tech-list article {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .datascience .courses-page .all-courses {
+    width: 250px;
+  }
+}
 .course-details {
   background-color: #F0F4F5;
 }
@@ -14441,6 +14696,42 @@
 .course-details .course-outline .tracks ul h5,
 .course-details .course-outline .prereq ul h5 {
   font-size: 15px;
+}
+@media (max-width: 1100px) {
+  .datascience .course-details .course-banner {
+    height: 388px;
+  }
+  .datascience .course-details .course-banner img {
+    display: none;
+  }
+  .datascience .course-details .course-banner .course-info {
+    width: 100%;
+    padding: 10px;
+  }
+  .datascience .course-details .course-anchors {
+    float: none;
+  }
+  .datascience .course-details .course-anchors .d-flex a {
+    width: 50%;
+  }
+  .datascience .course-details .course-outline h3 {
+    margin-top: 20px;
+  }
+  .datascience .course-details .course-outline .description {
+    width: 100%;
+  }
+  .datascience .course-details .course-outline .chapter-list .chapter {
+    width: 100%;
+  }
+  .datascience .course-details .course-outline .cards {
+    flex-direction: column;
+  }
+  .datascience .course-details .course-outline .cards .tracks,
+  .datascience .course-details .course-outline .cards .prereq {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 .courses-page .info-container {
   color: #ffff;
