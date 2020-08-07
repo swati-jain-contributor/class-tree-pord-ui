@@ -14511,6 +14511,9 @@
   transition: transform 0.25s ease-in-out;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
 }
+.course:hover {
+  transform: scale(1.05);
+}
 .course .tech-img {
   position: absolute;
   transform: translate(50%, -50%);
