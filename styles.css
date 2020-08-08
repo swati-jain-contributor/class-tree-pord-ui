@@ -14613,13 +14613,17 @@
 }
 .course h3 {
   font-size: 17px;
-  margin-top: 40px;
+  margin-top: 50px;
   color: #000;
   font-weight: bold;
+  text-align: left;
 }
 .course p {
   text-align: left;
   margin-top: -10px;
+}
+.course .fa {
+  color: #019970;
 }
 .course-details {
   background-color: #F0F4F5;
