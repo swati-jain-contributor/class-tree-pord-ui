@@ -15034,7 +15034,7 @@ button.next {
 }
 @media (min-width: 900px) {
   .add-class-box {
-    height: 500px;
+    height: 570px;
   }
   .collapse .custom-select {
     margin-top: -4px;
@@ -15543,6 +15543,9 @@ textarea {
   border-color: black;
   display: inline-flex;
   margin-left: 10px;
+}
+.gj-picker {
+  z-index: 25000;
 }
 @media (max-width: 767px) {
   .ss-header {
