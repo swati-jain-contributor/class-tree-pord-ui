@@ -1516,7 +1516,7 @@
 }
 .datascience .book-list {
   background: url(https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/book.jpg);
-  padding: 60px;
+  padding: 20px;
   margin: 0;
   display: flex;
 }
@@ -1528,23 +1528,24 @@
   width: 84%;
 }
 .datascience .book-list .book {
-  padding: 25px 0 0 0;
+  padding: 52px 0 0 0;
   margin: auto;
   width: 84%;
   height: auto;
   max-height: auto;
-  position: absolute;
-  bottom: 0;
+  margin-bottom: 0;
 }
 .datascience .book-list .parent {
   position: relative;
   width: 250px;
-  height: 400px;
+  display: flex;
+  align-items: flex-end;
 }
 .datascience .book-list .parent a {
   width: 100%;
   height: 100%;
-  display: block;
+  display: flex;
+  align-items: flex-end;
 }
 .datascience .book-list .bookreviewed {
   position: absolute;
@@ -2093,6 +2094,74 @@
   display: inline-block;
   vertical-align: middle;
 }
+.datascience .cb-container {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.datascience .cb-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.datascience .cb-container .cb-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #000;
+}
+.datascience .cb-container:hover input ~ .cb-checkmark {
+  background-color: #ececec;
+}
+.datascience .cb-container input:checked ~ .cb-checkmark {
+  background-color: #000;
+}
+.datascience .cb-container .cb-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.datascience .cb-container input:checked ~ .cb-checkmark:after {
+  display: block;
+}
+.datascience .cb-container .cb-checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.datascience .cb-container .pagination {
+  float: right;
+  width: auto;
+}
+.datascience .cb-container .pagination a {
+  border-radius: 0px;
+  border-color: #000;
+  color: #000;
+  font-size: 14px;
+}
 @media (min-width: 1200px) {
   .datascience .hidden-lg {
     display: none !important;
@@ -2219,8 +2288,6 @@
   }
   .datascience .book-list .book {
     display: block;
-    left: 50%;
-    transform: translate(-50%, 0);
   }
   .datascience .blog-list {
     padding: 0px !important;
@@ -2236,7 +2303,7 @@
     height: 300px;
   }
   .datascience .video-section .vlog-featured-info.container {
-    margin: 0!important;
+    margin: 0 !important;
     width: 100% !important;
     padding: 0;
   }
@@ -3386,8 +3453,8 @@
 }
 .datascience .navbar-inverse .navbar-brand:hover,
 .datascience .navbar-inverse .navbar-brand:focus {
-  color: #ffffff;
   background-color: transparent;
+  transform: scale(1.02);
 }
 .datascience .navbar-inverse .navbar-text {
   color: #ffffff;
@@ -6791,27 +6858,38 @@
   text-align: center;
   float: left;
   width: 100%;
+  float: right;
+  width: auto;
+}
+.datascience .pagination li.active a {
+  font-weight: bold;
+  color: #009970;
+  border-color: #009970;
+  border-width: 2px;
 }
 .datascience .pagination a {
   display: inline-block;
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
   border-radius: 6px;
   border: 1px solid #eee;
   box-sizing: border-box;
   position: relative;
-  font-size: 13px;
-  color: #888DA0;
   background: #fff;
   letter-spacing: 1px;
+  border-radius: 50%;
+  border-color: #000;
+  color: #000;
+  font-size: 18px ;
+  margin: 3px;
 }
 .datascience .pagination a.current-page,
 .datascience .pagination a:hover {
-  color: #fff;
+  color: #009970;
 }
 .datascience .pagination a i {
-  font-size: 12px;
+  font-size: 14px;
 }
 .datascience .back-to-filters {
   position: absolute;
@@ -14329,6 +14407,9 @@
     padding-left: 55px;
   }
 }
+.courses-page .course-banner {
+  position: relative;
+}
 .courses-page .info-container {
   color: #ffff;
   background: transparent;
@@ -14894,6 +14975,56 @@
 }
 .courses-page .skill-list article img {
   width: 80px;
+}
+.all-courses-pages .all-course-view {
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+  margin: auto;
+  flex-direction: row;
+}
+.all-courses-pages .all-course-view .filter-col {
+  width: 260px;
+  text-align: left;
+  border-right: 1px solid black;
+  margin-right: 40px;
+  color: #000;
+}
+.all-courses-pages .all-course-view .class-col {
+  font-size: 24px;
+  text-align: left;
+}
+.all-courses-pages .all-course-view .class-col .search-box {
+  padding: 20px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+  border-left: none;
+  border-right: none;
+  height: auto;
+  position: relative;
+}
+.all-courses-pages .all-course-view .class-col .search-box input {
+  width: 500px;
+  padding: 6px 0 6px 15px;
+  border-radius: 27px;
+  border-color: #ececec;
+  border-width: 1px;
+  border: 1px solid gray;
+  font-size: 22px;
+}
+.all-courses-pages .all-course-view .class-col .search-box .fa {
+  left: 470px;
+  top: 32px;
+  color: #000;
+  font-size: 20px;
+}
+.all-courses-pages .class-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 900px;
+  margin: auto;
 }
 /* Styles */
 .form-check {
