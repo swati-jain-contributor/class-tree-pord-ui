@@ -15545,7 +15545,7 @@ textarea {
   margin-left: 10px;
 }
 .gj-picker {
-  z-index: 25000;
+  z-index: 25000 !important;
 }
 @media (max-width: 767px) {
   .ss-header {
