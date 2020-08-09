@@ -1340,8 +1340,36 @@
   padding-right: 10px;
 }
 .datascience .pioneers {
-  background-color: #FAFAFA;
-  padding: 80px 0px;
+  padding: 44px 0px;
+  background-color: #f2f2f2;
+}
+.datascience .pioneers .slick-dots li button:before {
+  font-size: 25px;
+}
+.datascience .pioneers .pioneer {
+  background: #fff;
+  padding: 21px;
+  margin: 20px;
+  border: 1px solid #ececec;
+  display: flex;
+  height: 300px;
+  align-items: center;
+}
+.datascience .pioneers .pioneer h5 {
+  margin-bottom: 0px;
+}
+.datascience .pioneers .pioneer .pic-box {
+  width: 65%;
+}
+.datascience .pioneers .pioneer .pic-box img {
+  height: 200px;
+  display: block;
+  width: 100%;
+}
+.datascience .pioneers .pioneer .content-box {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 16px;
 }
 .datascience .pioneers h1 {
   width: 100%;
@@ -1362,9 +1390,9 @@
 .datascience .pioneers .list-carousel {
   margin-top: 20px;
   padding: 0 30px;
-  float: left;
-  width: 100%;
+  width: 1200px;
   position: relative;
+  margin: auto;
 }
 .datascience .pioneers .list-carousel .sw-btn {
   background: #909090;
@@ -2250,6 +2278,19 @@
   }
   .datascience .roadmap .flow .circle {
     margin-bottom: 20px;
+  }
+  .datascience .pioneers {
+    background-color: #f2f2f2;
+  }
+  .datascience .pioneers .pioneer {
+    background: #fff;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ececec;
+    display: flex;
+  }
+  .datascience .pioneers .pioneer .pic-box {
+    width: 30%;
   }
   .datascience .pioneers .list-carousel {
     padding: 0px;
@@ -14591,6 +14632,7 @@
   text-align: center;
   transition: transform 0.25s ease-in-out;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
 }
 .course:hover {
   transform: scale(1.05);
@@ -14621,6 +14663,8 @@
 .course p {
   text-align: left;
   margin-top: -10px;
+  color: #000;
+  font-size: 16px;
 }
 .course .fa {
   color: #019970;
