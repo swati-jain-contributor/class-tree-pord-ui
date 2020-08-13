@@ -1288,12 +1288,13 @@
   flex-direction: column;
   color: #fff;
   padding: 20px;
-  width: 330px;
+  width: 284px;
   background-color: #2388b0;
   position: relative;
 }
 .datascience .webinars .right .webinar h4 {
   font-size: 20px;
+  text-align: left;
 }
 .datascience .webinars .right .webinar span {
   font-size: 20px;
@@ -2315,6 +2316,9 @@
   .datascience .webinars .row .right .webinar {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .datascience .webinars .row .right .webinar h4 {
+    text-align: left;
   }
   .datascience .book-list .parent {
     height: 330px;
