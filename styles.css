@@ -14456,6 +14456,9 @@
 .courses-page .course-banner {
   position: relative;
 }
+.courses-page .course-banner img {
+  width: 100%;
+}
 .courses-page .info-container {
   color: #ffff;
   background: transparent;
@@ -14844,6 +14847,11 @@
   font-size: 14px;
   margin-left: 12px;
   font-weight: 400;
+}
+.course-details .course-banner .info .know-more {
+  text-decoration: underline;
+  font-size: 18px;
+  cursor: pointer;
 }
 .course-details .course-anchors {
   background: #f1f1f2;
