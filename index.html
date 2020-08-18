@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
   <base href="/"><link rel="stylesheet" href="styles.css">
-  <title>BakeMinds Learn Together</title>
+  <title>&#x25B7; Learn Data Science | BakeMinds</title>
      <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
@@ -23,7 +23,8 @@
 
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 
-<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<!-- <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> -->
      <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
      <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
@@ -36,14 +37,29 @@
           "@type": "Organization",
           "name": "Bakeminds",
           "url": "https://datascience.bakeminds.com/search-courses",
-          "logo": "https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo/logo.png"
+          "logo": "https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo/logo.png",
+          "sameAs": [ 
+            "https://www.facebook.com/bakeminds",
+            "https://www.twitter.com/bakeminds",
+            "https://www.youtube.com/c/bakeminds",
+            "https://www.linkedin.com/company/data-science-bakeminds/"
+            ]
       }
   </script>
      <meta charset="utf-8">
-     <meta name="description" content="BakeMinds is a knowledge sharing platform, open to people to share their knowledge with people who are interested in learning.">
+     <meta name="description" content="Learn Data Science from the comfort of your browser, at your own pace with Bakeminds&apos;s courses, books,  blogs &amp; videos on R, Python, Statistics &amp; more.">
+     <meta data-react-helmet="true" name="twitter:title" content="Learn R, Python &amp; Data Science Online">
+     <meta data-react-helmet="true" name="twitter:description" content="Learn Data Science from the comfort of your browser, at your own pace with Bakeminds&apos;s courses, books,  blogs &amp; videos on R, Python, Statistics &amp; more.">
+     <meta data-react-helmet="true" name="twitter:card" content="summary">
+     <meta data-react-helmet="true" name="twitter:site" content="@Bakeminds">
+     <meta data-react-helmet="true" name="twitter:image" content="https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo/logo.png">
+     <meta data-react-helmet="true" name="twitter:image:width" content="300">
+     <meta data-react-helmet="true" name="twitter:image:height" content="300">
+     <meta data-react-helmet="true" name="twitter:creator" content="@Bakeminds">
+     <meta data-react-helmet="true" name="twitter:domain" content="datascience.bakeminds.com">
      <meta property="og:type" content="website">
-     <meta property="og:title" content="Together we learn  ">
-    <meta property="og:description" content="BakeMinds is a knowledge sharing platform, open to people to share their knowledge with people who are interested in learning.">
+     <meta property="og:title" content="Learn Data Science Online">
+    <meta property="og:description" content="Learn Data Science from the comfort of your browser, at your own pace with Bakeminds&apos;s courses, books,  blogs &amp; videos on R, Python, Statistics &amp; more.">
     <meta property="og:image" content="https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo/logo.png">
     <meta property="og:url" content="https://www.bakeminds.com">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -58,7 +74,7 @@
   gtag('config', 'UA-162981138-1');
 </script>
 <!-- Hotjar Tracking Code for datascience.bakeminds.com -->
-<script>
+<!-- <script>
   (function(h,o,t,j,a,r){
       h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
       h._hjSettings={hjid:1946165,hjsv:6};
@@ -67,12 +83,12 @@
       r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
       a.appendChild(r);
   })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+</script> -->
   <!-- Sitemap Generator -->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     var _0xaea9 = ["sitemapgenerator:: ", "innerHTML", "body", "document", "stringify", "*", "postMessage", "setTimeout"]; window[_0xaea9[7]](function () { parent[_0xaea9[6]](_0xaea9[0] + JSON[_0xaea9[4]](window[_0xaea9[3]][_0xaea9[2]][_0xaea9[1]]), _0xaea9[5]) }, 3000);
-  </script>
-<script src="https://meet.jit.si/external_api.js"></script>
+  </script> -->
+<!-- <script src='https://meet.jit.si/external_api.js'></script> -->
 </head>
 
 <body>
@@ -86,8 +102,6 @@
   </div>
 
   <div id="app"></div>
-
-  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
   
   <script>
 
@@ -180,9 +194,9 @@ function notifyMe(title, msg) {
   else if (Notification.permission === "granted") {
     // If it's okay let's create a notification
     var notification = new Notification(title ,{
-      icon: 'https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo.JPG',
+      icon: 'https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo/logo.png',
    body: msg,
-   badge:'https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo.JPG'
+   badge:'https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo/logo.png'
     });
   }
 
@@ -200,81 +214,26 @@ function notifyMe(title, msg) {
 function showThankyou(){
   $("#modal-thankyou").modal();
 }
-// function startRecording(){
-//   var elementToShare = document.body;
-//   var canvas2d = document.createElement('canvas'); // OUR OWN invisible CANVAS
-// var context = canvas2d.getContext('2d');
-// canvas2d.width = elementToShare.clientWidth;
-// canvas2d.height = elementToShare.clientHeight;
-// canvas2d.style = 'display: none;';
-// (document.body || document.documentElement).appendChild(canvas2d);
 
-// // looper+selfinvoker method
-// (function looper() {
-//     if (recorder && recorder.getBlob() && recorder.getBlob().size) {
-//         // this line checks whether recorder is stopped
-//         return;
-//     }
-
-//     // looper keeps calling this method until recording stops
-//     html2canvas(document.body, {
-//         grabMouse: false,
-//         allowTaint:true,
-//         onrendered: function(canvas) {
-//           console.log(canvas);
-//             context.clearRect(0, 0, canvas2d.width, canvas2d.height);
-
-//             // draw html2canvas resulting canvas on our own canvas
-//             context.drawImage(canvas, 0, 0, canvas2d.width, canvas2d.height);
-
-//             // here is how looper works
-//             //setTimeout(looper, 1);
-//         }
+// function loadJitsi(id, topic,name){
+//   const domain = 'meet.jit.si';
+//     const options = {
+//       roomName: "Classtree Live Class on "+ topic + " By " + name,
+//       width: window.innerWidth,
+//       height: window.innerHeight,
+//       parentNode: document.querySelector('#meet'),
+//       interfaceConfigOverwrite: {OPEN_IN_MOBILE_BROWSER:true, SHOW_CHROME_EXTENSION_BANNER :false, MOBILE_APP_PROMO:false, JITSI_WATERMARK_LINK:"https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo/logo.png" }
+//     };
+//     const api = new JitsiMeetExternalAPI(domain, options);
+//     api.on('readyToClose', () => {
+//       location.href = "/student?thankyou=true";
 //     });
-// })();
-
-// var canvasStream = canvas2d.captureStream();
-// canvasStream.fullcanvas = true;
-// canvasStream.width = canvas2d.width;
-// canvasStream.height = canvas2d.height;
-//   var recorder = RecordRTC([canvasStream], {
-//     type: 'video',
-//     showMousePointer: false
-// });
-// recorder.startRecording();
-// setTimeout(()=>{
-// //   recorder.stopRecording(function(url) {
-// //     window.open(url);
-// // });
-// var recordedBlobs = recorder.getBlob();
-// var file = new File([recordedBlobs], 'video.webm', {
-//     type: 'video/webm'
-// });
-
-// invokeSaveAsDialog(file);
-// }, 10000)
-
+//     api.addEventListener('readyToClose',  function(){
+//       location.href = "/student?thankyou=true";
+//                                               });
 // }
-function loadJitsi(id, topic,name){
-  const domain = 'meet.jit.si';
-    const options = {
-      roomName: "Classtree Live Class on "+ topic + " By " + name,
-      width: window.innerWidth,
-      height: window.innerHeight,
-      parentNode: document.querySelector('#meet'),
-      interfaceConfigOverwrite: {OPEN_IN_MOBILE_BROWSER:true, SHOW_CHROME_EXTENSION_BANNER :false, MOBILE_APP_PROMO:false, JITSI_WATERMARK_LINK:"https://raw.githubusercontent.com/swati-jain-contributor/privacy-policy/master/logo.JPG" }
-    };
-    const api = new JitsiMeetExternalAPI(domain, options);
-    api.on('readyToClose', () => {
-      location.href = "/student?thankyou=true";
-    });
-    api.addEventListener('readyToClose',  function(){
-      location.href = "/student?thankyou=true";
-                                              });
-}
   </script>
   <script src="/bundle.js"></script>
-  <!-- <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script> -->
 
 
 
